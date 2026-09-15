@@ -293,9 +293,9 @@ Esto no es solo buscar. Durante un mes vas a llevar **tu propio proceso de selec
 > > id, nombre, sector, actividad, direccion, cp, localidad, lat, lon,
 > > telefono, email, web, contacto_nombre, contacto_cargo, fuente,
 > > verificado, estado, fecha_contacto, notas
-> > Sin espacios después de las comas en el resultado. Separador coma, decimales con punto, y entre comillas cualquier
-> > texto que lleve una coma dentro. No inventes ningún dato: lo que
-> > no te dé, déjalo vacío.
+> > En el resultado: separador coma sin espacios, decimales con
+> > punto, y entre comillas cualquier texto que lleve una coma.
+> > No inventes ningún dato: lo que no te dé, déjalo vacío.
 > > [PEGA AQUÍ TUS DATOS]
 > > ```
 > > **Revisa lo que te devuelve**, campo por campo, antes de pegarlo.
