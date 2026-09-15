@@ -1,0 +1,10 @@
+# Los vídeos NO se suben a GitHub: se suben a OneDrive/Teams y el enlace va en 02_Proceso_IA.md
+*.mp4
+*.mov
+*.mkv
+*.webm
+# Copias de bloqueo de LibreOffice
+.~lock.*
+# Sistema
+.DS_Store
+.obsidian/

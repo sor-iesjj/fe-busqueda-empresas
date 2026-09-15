@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis empresas FE</title>
+  <!-- Leaflet: la librería del mapa. No borrar estas dos líneas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <!-- PapaParse: lee el CSV. No borrar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mis empresas para la FE</h1>
+  </header>
+
+  <!-- TODO: deslizador del radio (1 km hasta km_max) y texto con el valor -->
+  <section id="controles"></section>
+
+  <!-- TODO: contador "X de Y empresas dentro de Z km" -->
+  <p id="contador"></p>
+
+  <!-- Aquí se dibuja el mapa. Necesita una altura en style.css -->
+  <div id="mapa"></div>
+
+  <!-- TODO: listado de empresas ordenado por distancia -->
+  <ul id="listado"></ul>
+
+  <!-- TODO: ficha de la empresa seleccionada -->
+  <section id="ficha"></section>
+
+  <script src="app.js"></script>
+</body>
+</html>

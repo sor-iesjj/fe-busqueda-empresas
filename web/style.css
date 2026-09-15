@@ -1,0 +1,4 @@
+/* Sin altura, el mapa no se ve. No borrar */
+#mapa {
+  height: 60vh;
+}

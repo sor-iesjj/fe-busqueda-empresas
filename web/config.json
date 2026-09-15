@@ -1,0 +1,8 @@
+{
+  "punto_partida": {
+    "descripcion": "Escribe aquí un cruce de calles cercano a tu casa, NO tu dirección",
+    "lat": 0,
+    "lon": 0
+  },
+  "km_max": 5
+}
