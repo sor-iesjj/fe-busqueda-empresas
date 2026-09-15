@@ -121,9 +121,11 @@ Esto no es solo buscar. Durante un mes vas a llevar **tu propio proceso de selec
 > 1. Abre la carpeta **`01_Practicas`** de tu bóveda en el Explorador de archivos.
 > 2. Pulsa en la **barra de direcciones** (donde pone la ruta), escribe `cmd` y pulsa **Intro**. Se abre una terminal **ya situada en esa carpeta**.
 > 3. Escribe, cambiando `TU_USUARIO` por tu usuario de GitHub:
->    ```
->    git clone https://github.com/TU_USUARIO/fe-busqueda-empresas.git 99_FE
->    ```
+>
+> ```
+> git clone https://github.com/TU_USUARIO/fe-busqueda-empresas.git 99_FE
+> ```
+>
 > 4. La primera vez se abre una ventana para **iniciar sesión en GitHub**. Inicia sesión y autoriza.
 > 5. Comprueba que existe la carpeta `01_Practicas\99_FE` con `README.md`, `datos` y `web` dentro.
 >
@@ -170,20 +172,23 @@ Esto no es solo buscar. Durante un mes vas a llevar **tu propio proceso de selec
 > [!example] Paso 5 — Fija tu punto de partida
 > 1. Abre **Google Maps** y busca **un cruce de calles o una plaza cerca de tu casa**. No tu portal.
 > 2. **Clic derecho** sobre ese punto. Arriba del menú salen dos números, por ejemplo `38.3452, -0.4810`. **Haz clic sobre ellos**: se copian.
-> 3. Abre **`web/config.json`** con el Bloc de notas y rellena:
->    ```json
->    {
->      "punto_partida": {
->        "descripcion": "Plaza de ejemplo, Alicante",
->        "lat": 38.3452,
->        "lon": -0.4810
->      },
->      "km_max": 7
->    }
->    ```
->    - `lat` es el **primer** número y `lon` el **segundo**.
->    - `km_max` es la distancia máxima que pusiste en `01_Sector.md`.
->    - Los decimales van **con punto**, nunca con coma.
+> 3. Abre **`web/config.json`** con el Bloc de notas y rellénalo así:
+>
+> ```json
+> {
+>   "punto_partida": {
+>     "descripcion": "Plaza de ejemplo, Alicante",
+>     "lat": 38.3452,
+>     "lon": -0.4810
+>   },
+>   "km_max": 7
+> }
+> ```
+>
+> - `lat` es el **primer** número y `lon` el **segundo**.
+> - `km_max` es la distancia máxima que pusiste en `01_Sector.md`.
+> - Los decimales van **con punto**, nunca con coma.
+>
 > 4. Commit: `Punto de partida`.
 >
 > > [!quote] Latitud y longitud
@@ -284,9 +289,11 @@ Esto no es solo buscar. Durante un mes vas a llevar **tu propio proceso de selec
 > > [!tip] La IA te puede ahorrar teclear
 > > Cuando tengas varias empresas **ya comprobadas**, pégale tus datos y pídele:
 > > ```
-> > Convierte estos datos en líneas CSV con estas columnas y en este orden:
-> > id,nombre,sector,actividad,direccion,cp,localidad,lat,lon,telefono,email,web,contacto_nombre,contacto_cargo,fuente,verificado,estado,fecha_contacto,notas
-> > Separador coma, decimales con punto, y entre comillas cualquier
+> > Convierte estos datos en líneas CSV con estas 19 columnas, en este orden:
+> > id, nombre, sector, actividad, direccion, cp, localidad, lat, lon,
+> > telefono, email, web, contacto_nombre, contacto_cargo, fuente,
+> > verificado, estado, fecha_contacto, notas
+> > Sin espacios después de las comas en el resultado. Separador coma, decimales con punto, y entre comillas cualquier
 > > texto que lleve una coma dentro. No inventes ningún dato: lo que
 > > no te dé, déjalo vacío.
 > > [PEGA AQUÍ TUS DATOS]
@@ -364,9 +371,11 @@ Esto no es solo buscar. Durante un mes vas a llevar **tu propio proceso de selec
 >
 > 1. Abre la terminal en **`01_Practicas\99_FE`** (la carpeta que contiene `datos` y `web`, **no** dentro de `web`).
 > 2. Escribe:
->    ```
->    python -m http.server 8000
->    ```
+>
+> ```
+> python -m http.server 8000
+> ```
+>
 > 3. **Bien:** sale `Serving HTTP on :: port 8000`. **No cierres esa ventana**: si la cierras, se apaga el servidor.
 > 4. Abre el navegador y ve a **`http://localhost:8000/web/`**.
 > 5. Para apagarlo: en la terminal, **`Ctrl + C`**.
